@@ -1,0 +1,199 @@
+header {
+    padding-top: 25px;
+    background-color: #f3f0e7;
+    padding-bottom: 25px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* body {
+    background-image: url('../resources/edm_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.nav-bottom-row {
+    font-family: Karla, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f0e7;
+    padding-bottom: 25px;
+    display: flex;
+}
+
+.nav-bottom-row a {
+    margin-right: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    padding-top: 16px;
+  
+}
+
+.topnav-logo {
+    width: 15%;
+
+}
+
+.topnav {
+    display: flex;
+    padding: 8px;
+}
+
+.top-header {
+    padding: 32px 48px 0;
+    
+}
+
+.help-link {
+    position: relative;
+    text-decoration: none;
+    color: #000; /* Set the color of the text */
+}
+
+.help-list {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    top: 100%; /* Position the list below the link */
+    left: -10px; /* Adjust the left position as needed */
+    background-color: #fff; /* Set a different background color */
+    border: 1px solid #f3f0e7; /* Set the border width and color */
+    transition: opacity 0.3s ease-in-out; /* Add a transition effect */
+    opacity: 0; /* Start with opacity 0 */
+    pointer-events: none; /* Ensure the list doesn't interfere with hover */
+    z-index: 1; /* Ensure the dropdown appears above other content */
+}
+
+.help-link:hover .help-list {
+    display: block;
+    opacity: 1; /* Make the list visible */
+    pointer-events: auto; /* Enable pointer events for the list */
+}
+
+header {
+    padding-top: 25px;
+    background-color: #f3f0e7;
+    padding-bottom: 25px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* body {
+    background-image: url('../resources/edm_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.nav-bottom-row {
+    font-family: Karla, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f0e7;
+    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line on small screens */
+}
+
+.nav-bottom-row a {
+    margin-right: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    padding-top: 16px;
+}
+
+
+.topnav {
+    display: flex;
+    padding: 8px;
+    flex-wrap: wrap; 
+}
+
+.top-header {
+    padding: 32px 16px 0; 
+}
+
+.help-link {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+.help-list {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    top: 100%; /* Position the list below the link */
+    left: 0; /* Adjust the left position as needed */
+    width: 100%; /* Make the list full width on small screens */
+    background-color: #fff; /* Set a different background color */
+    border: 1px solid #f3f0e7; /* Set the border width and color */
+    transition: opacity 0.3s ease-in-out; /* Add a transition effect */
+    opacity: 0; /* Start with opacity 0 */
+    pointer-events: none; /* Ensure the list doesn't interfere with hover */
+    z-index: 1; /* Ensure the dropdown appears above other content */
+}
+
+.help-link:hover .help-list {
+    display: block;
+    opacity: 1; /* Make the list visible */
+    pointer-events: auto; /* Enable pointer events for the list */
+}
+
+.background-container {
+    width: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: 75%;
+    background-repeat: no-repeat;
+}
+/* Media Query for Small Screens */
+@media only screen and (max-width: 768px){
+    .nav-bottom-row a {
+        margin-right: 10px;
+    }
+
+    .top-header {
+        padding: 16px;
+    }
+
+    .topnav-logo {
+        width: 50%;
+    }
+
+    .topnav {
+        justify-content: center;
+    }
+/* 
+    body {
+        background-image: url('../resources/edm_background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+    } */
+    body {
+        background-size: contain;
+        width: fit-content;
+    }
+
+}
