@@ -86,49 +86,7 @@ body, html {
 .level-1-link {
     position: relative;
 }
-/* .help-link {
-    position: relative;
-    text-decoration: none;
-    color: #000;
-}
-.help-list-container {
-    position: relative;
-}
-.help-list {
-    position: relative;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    top: 100%;
-    left: -10px;
-    background-color: #f3f0e7;
-    border: 1px solid #f3f0e7;
-    pointer-events: none;
-    z-index: 6;
-    color: black;
-    pointer-events: auto;
-    white-space: nowrap;
-    min-width: 150px;
-    opacity: 1;
-}
 
-.help-list li{
-    color: black;
-    text-decoration: none;
-    pointer-events: auto;
-} */
-
-/* .help-link:hover .help-list {
-    display: block;
-    position: absolute;
-    white-space: nowrap;
-    z-index: 4;
-    min-width: 150px;
-    left: 0;
-    padding: 0;
-    background: var(--color-page-bg);
-    overflow: hidden;
-} */
 
 /* Main Section */
 
@@ -145,13 +103,91 @@ body, html {
     background-repeat: no-repeat;
     z-index: 1;
 }
-
-.test-container {
-    z-index: 10;
-    position: absolute;
+.parent-image-container {
+    position: relative;
 }
 
+.text-left-box {
+    position: absolute;
+    max-width: 330px;
+    text-align: center;
+    margin: 20px 55px 30px;
+    padding: 32px;
+    font-family: 'Josefin Sans', sans-serif;
+    top: 0;
+    left: 0;
+    background-color: rgba(80, 111, 138, 0.8);
+    color: white;
+    font-size: 18px;
+}
 
+.text-left-box h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 550;
+    max-width: 300px;
+
+
+}
+
+.bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-slider-caption-bg);
+    opacity: 0.8;
+  }
+
+h2.font-section-heading {
+    font-size: 30px;
+    line-height: 1.25em;
+    margin: -0.25em 0;
+    letter-spacing: .025em;
+    position: relative;
+    padding-bottom: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.font-button {
+    background-color: white;
+    position: relative;
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: bottom;
+    width: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border-radius: 2px;
+    padding: 0 16px;
+    font-family: Karla, sans-serif;
+    font-size: 13px;
+}
+
+.merch-header {
+    font-size: 25px;
+    text-decoration: none;
+    font-family: Josefin Sans, sans-serif;
+    color: black;
+    font-weight: 600;
+}
+
+/* Product slideshow */
+.slideshow-shop {
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
 /* Media Query for Small Screens */
 @media only screen and (max-width: 768px){
     .nav-bottom-row a {
