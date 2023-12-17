@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dabin Fan Site</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-content">
+      <header class="top-header">
+        <div class="topnav">
+          <img class="topnav-logo" src="../resources/dabin-top-logo.jpg" />
+        </div>
+        <div class="nav-bottom-row">
+        <ul>
+            <li class="level-1-link"> <a class="home" href="#home">HOME</a></li>
+<li class="level-1-link">      <a class="tickets" href="#tickets">SHOWS</a></li>
+
+         <li class="level-1-link"> <a>MUSIC</a></li>
+         <li class="level-1-link"> <a>ABOUT</a></li>
+         <li class="level-1-link">
+            <a
+            href="#"
+            class="help-link"
+            aria-expanded="false"
+            onmouseover="toggleAriaExpanded(true, this)"
+            onmouseout="setTimeout(() => toggleAriaExpanded(false, this), 3000)"
+          >
+            <span>HELP</span>
+        </a>
+            <div class="help-list-container" onmouseenter="onContainerMouseEnter()" onmouseleave="onContainerMouseLeave()">
+                <ul class="help-list" style="display: block;">
+                <li class="help-list-link">
+                    <a href="RETURNS">RETURNS PORTAL</a>
+                </li>
+                <li class="help-list-link">
+                    <a href="RETURNS">RETURNS PORTAL</a>
+                </li>
+                <li class="help-list-link">
+                    <a href="RETURNS">RETURNS PORTAL</a>
+                </li>
+                </ul>
+              </div>
+        </li>
+        </ul>
+
+        <script>
+
+            let isMouseInsideContainer = false;
+
+            function toggleAriaExpanded(value, link) {
+              const helpLink = link;
+              const helpListContainer = helpLink.nextElementSibling;
+
+              helpLink.setAttribute('aria-expanded', value);
+
+              if (value) {
+                helpListContainer.style.display = 'block';
+                helpListContainer.style.opacity = 1;
+              } else {
+                if (!isMouseInsideContainer) {
+                  hideContainer();
+                }
+              }
+            }
+
+            function onContainerMouseEnter() {
+                console.log("onContainerMouseEnter", isMouseInsideContainer)
+              isMouseInsideContainer = true;
+            }
+
+            function onContainerMouseLeave() {
+              isMouseInsideContainer = false;
+              hideContainer();
+
+            }
+
+            function hideContainer() {
+              const helpLink = document.querySelector('.help-link');
+              const helpListContainer = helpLink.nextElementSibling;
+              helpListContainer.style.display = 'none';
+              helpListContainer.style.opacity = 0;
+            }
+            </script>
+        </div>
+
+      </header>
+
+
+
+        <img
+          class="background-image"
+          src="https://dabinmusic.com/cdn/shop/files/dabin-sq-2_1000x.jpg?v=1613601313"
+        />
+      </div>
+      <div>
+        <p>Placeholder</p>
+      </div>
+    </div>
+  </body>
+</html>
