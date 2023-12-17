@@ -32,7 +32,7 @@
             class="help-link"
             aria-expanded="false"
             onmouseover="toggleAriaExpanded(true, this)"
-            onmouseout="setTimeout(() => toggleAriaExpanded(false, this), 3000)"
+            onmouseout="setTimeout(() => toggleAriaExpanded(false, this), 500)"
           >
             <span>HELP</span>
         </a>
@@ -51,59 +51,19 @@
               </div>
         </li>
         </ul>
-
-        <script>
-
-            let isMouseInsideContainer = false;
-
-            function toggleAriaExpanded(value, link) {
-              const helpLink = link;
-              const helpListContainer = helpLink.nextElementSibling;
-
-              helpLink.setAttribute('aria-expanded', value);
-
-              if (value) {
-                helpListContainer.style.display = 'block';
-                helpListContainer.style.opacity = 1;
-              } else {
-                if (!isMouseInsideContainer) {
-                  hideContainer();
-                }
-              }
-            }
-
-            function onContainerMouseEnter() {
-                console.log("onContainerMouseEnter", isMouseInsideContainer)
-              isMouseInsideContainer = true;
-            }
-
-            function onContainerMouseLeave() {
-              isMouseInsideContainer = false;
-              hideContainer();
-
-            }
-
-            function hideContainer() {
-              const helpLink = document.querySelector('.help-link');
-              const helpListContainer = helpLink.nextElementSibling;
-              helpListContainer.style.display = 'none';
-              helpListContainer.style.opacity = 0;
-            }
-            </script>
         </div>
 
       </header>
-
-
-
+      <section>
+        <div class="background-image-container">
         <img
-          class="background-image"
-          src="https://dabinmusic.com/cdn/shop/files/dabin-sq-2_1000x.jpg?v=1613601313"
-        />
-      </div>
-      <div>
-        <p>Placeholder</p>
-      </div>
+        class="background-image"
+        src="https://dabinmusic.com/cdn/shop/files/dabin-sq-2_1000x.jpg?v=1613601313"
+      />
     </div>
+  </section>
+  </div>
+
+
   </body>
 </html>
