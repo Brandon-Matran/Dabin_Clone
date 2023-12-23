@@ -188,6 +188,66 @@ h2.font-section-heading {
     padding-top: 72px;
     padding-bottom: 72px;
 }
+
+
+.slideshow-container {
+    width: 18%;
+    margin: auto;
+    overflow: hidden;
+}
+.slideshow-slide {
+    width: 100%;
+    height: 391px;
+    display: flex;
+
+}
+
+.slideshow-slide img {
+    width: 392px;
+
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-size: 50px;
+    font-weight: lighter;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.prev:hover{
+    transform: scale(0.7);
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-size: 50px;
+    font-weight: lighter;
+    right: 0;
+    transition: transform 0.3s ease;
+}
+
+.next:hover {
+    transform: scale(0.7);
+}
+
+.mySlides {
+    padding-right: 5px;
+    width: 391px;
+    height: 392px;
+}
 /* Media Query for Small Screens */
 @media only screen and (max-width: 768px){
     .nav-bottom-row a {
