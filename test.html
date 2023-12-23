@@ -1,102 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dabin Fan Site</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/scripts.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Karla:wght@200;400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="main-content">
-      <header class="top-header">
-        <div class="topnav">
-          <img class="topnav-logo" src="../resources/dabin-top-logo.jpg" />
-        </div>
-        <div class="nav-bottom-row">
-          <ul>
-            <li class="level-1-link"><a class="home" href="#home">HOME</a></li>
-            <li class="level-1-link">
-              <a class="tickets" href="#tickets">SHOWS</a>
-            </li>
 
-            <li class="level-1-link"><a>MUSIC</a></li>
-            <li class="level-1-link"><a>ABOUT</a></li>
-            <li class="level-1-link">
-              <a
-                href="#"
-                class="help-link"
-                aria-expanded="false"
-                onmouseover="toggleAriaExpanded(true, this)"
-                onmouseout="setTimeout(() => toggleAriaExpanded(false, this), 500)"
-              >
-                <span>HELP</span>
-              </a>
-              <div
-                class="help-list-container"
-                onmouseenter="onContainerMouseEnter()"
-                onmouseleave="onContainerMouseLeave()"
-              >
-                <ul class="help-list" style="display: block">
-                  <li class="help-list-link">
-                    <a href="RETURNS">RETURNS PORTAL</a>
-                  </li>
-                  <li class="help-list-link">
-                    <a href="RETURNS">RETURNS PORTAL</a>
-                  </li>
-                  <li class="help-list-link">
-                    <a href="RETURNS">RETURNS PORTAL</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </header>
-      <section class="parent-image-container">
-        <div class="background-image-container">
-          <img
-            class="background-image"
-            src="https://dabinmusic.com/cdn/shop/files/dabin-sq-2_1000x.jpg?v=1613601313"
-          />
-          <div class="caption text-left-box" style="top: 30px">
-            <div class="bg"></div>
-            <h2 class="font-section-heading">OFFICIAL DABIN MERCH</h2>
-            <div class="slideshow-button">
-              <a class="font-button" href="merch">SHOP NOW</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dabin Fan Site</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/scripts.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Karla:wght@200;400&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="main-content">
+    <header class="top-header">
+      <div class="topnav">
+        <img class="topnav-logo" src="../resources/dabin-top-logo.jpg" />
+      </div>
+      <div class="nav-bottom-row">
+        <ul>
+          <li class="level-1-link"><a class="home" href="#home">HOME</a></li>
+          <li class="level-1-link">
+            <a class="tickets" href="#tickets">SHOWS</a>
+          </li>
+
+          <li class="level-1-link"><a>MUSIC</a></li>
+          <li class="level-1-link"><a>ABOUT</a></li>
+          <li class="level-1-link">
+            <a href="#" class="help-link" aria-expanded="false" onmouseover="toggleAriaExpanded(true, this)"
+              onmouseout="setTimeout(() => toggleAriaExpanded(false, this), 500)">
+              <span>HELP</span>
+            </a>
+            <div class="help-list-container" onmouseenter="onContainerMouseEnter()"
+              onmouseleave="onContainerMouseLeave()">
+              <ul class="help-list" style="display: block">
+                <li class="help-list-link">
+                  <a href="RETURNS">RETURNS PORTAL</a>
+                </li>
+                <li class="help-list-link">
+                  <a href="RETURNS">RETURNS PORTAL</a>
+                </li>
+                <li class="help-list-link">
+                  <a href="RETURNS">RETURNS PORTAL</a>
+                </li>
+              </ul>
             </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="parent-image-container">
+      <div class="background-image-container">
+        <img class="background-image" src="https://dabinmusic.com/cdn/shop/files/dabin-sq-2_1000x.jpg?v=1613601313" />
+        <div class="caption text-left-box" style="top: 30px">
+          <div class="bg"></div>
+          <h2 class="font-section-heading">OFFICIAL DABIN MERCH</h2>
+          <div class="slideshow-button">
+            <a class="font-button" href="merch">SHOP NOW</a>
           </div>
         </div>
-      </section>
-      <section class="slideshow-shop">
-        <div class="row header">
-          <div class="columns">
-            <h2 class="font-section-heading merch-header">
-              <a href="all-merch" class="merch-header">All Merch</a>
-            </h2>
-          </div>
+      </div>
+    </section>
+    <section class="slideshow-shop">
+      <div class="row header">
+        <div class="columns">
+          <h2 class="font-section-heading merch-header">
+            <a href="all-merch" class="merch-header">All Merch</a>
+          </h2>
         </div>
-        <div class="slideshow-container">
-          <div class="slideshow-slide">
-            <img src="./resources/products/img6.png" id="lastClone" />
-            <img src="./resources/products/img1.png" id="image1" />
-            <img src="./resources/products/img2.png" id="image2" />
-            <img src="./resources/products/img3.png" id="image3" />
-            <img src="./resources/products/img4.png" id="image4" />
-            <img src="./resources/products/img5.png" id="image5" />
-            <img src="./resources/products/img6.png" id="image6" />
-            <img src="./resources/products/img1.png" id="firstClone" />
-          </div>
-          <a class="prev" id="prevBtn">❮</a>
-          <a class="next" id="nextBtn">Next</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="slideshow-slide">
+          <img src="./resources/products/img6.png" id="lastClone" />
+          <img src="./resources/products/img1.png" id="image1" />
+          <img src="./resources/products/img2.png" id="image2" />
+          <img src="./resources/products/img3.png" id="image3" />
+          <img src="./resources/products/img4.png" id="image4" />
+          <img src="./resources/products/img5.png" id="image5" />
+          <img src="./resources/products/img6.png" id="image6" />
+          <img src="./resources/products/img1.png" id="firstClone" />
         </div>
-      </section>
+        <a class="prev" id="prevBtn">&#8249;</a>
+        <a class="next" id="nextBtn">&#8250;</a>
+      </div>
+    </section>
+    <section class="shopify-section-container">
+      <div class="shopify-section">
+        <div class="container">
+        <div class="featured-content-container">
+          <div class="featured-content-text">
+            <h2 class="featured-content-text-heading">SHOWS</h2>
+            <div>
+              <p>Grab your tickets for upcoming Festivals and Dabin Headline shows</p>
+            </div>
+
+          </div>
+          <div class="featured-content-image">
+            <img src="./resources/dabin_concert.webp" />
+          </div>
+
+        </div>
+      </div>
     </div>
-  </body>
+      </section>
+
+</body>
+
 </html>
