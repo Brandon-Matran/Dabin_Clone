@@ -259,6 +259,7 @@ h2.font-section-heading {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
     letter-spacing: 2px;
+    font-weight: 600;
 }
 .featured-content-container {
     display: flex;
@@ -333,6 +334,11 @@ h2.font-section-heading {
 .email-root {
     padding: 72px 0;
 }
+
+.email-body {
+    max-width: 400px;
+    padding: 0 32px;
+}
 .email-body form{
     display: flex;
 }
@@ -355,14 +361,19 @@ h2.font-section-heading {
 }
 
 input, textarea{
-    width: 100%;
+    width: 180px;
     overflow: auto;
     max-width: 100%;
     margin: 0 16px 0 0;
+    padding: 0 16px;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    border: 1px solid;
+    border-radius: 2px;
 }
 
 .subscribe-button {
-    background-color: rgba(80, 111, 138, 0.8);
+    background-color: #506f8a;
     position: relative;
     margin-bottom: 0;
     font-size: 14px;
@@ -419,6 +430,9 @@ input, textarea{
     display:inline-flex
 }
 
+.footer-socials a {
+    padding-right: 15px;
+}
 .footer-menu > li{
     list-style-type: none;
     padding: 0;
@@ -460,9 +474,9 @@ input, textarea{
     list-style-type: none;
     display: flex;
 }
-.payment-icons-item img {
-    height: 24px;
-    width: 38px;
+.payment-icons-list li {
+    margin-right: 10px;
+
 }
 
 .footer-logo-parent {
