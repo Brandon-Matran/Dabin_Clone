@@ -333,6 +333,9 @@ h2.font-section-heading {
 .email-root {
     padding: 72px 0;
 }
+.email-body form{
+    display: flex;
+}
 
 .email-container {
     display: flex;
@@ -341,6 +344,105 @@ h2.font-section-heading {
     align-items: center;
 }
 
+.subscribe-input {
+    
+    border: 1px solid black;
+    box-shadow: none;
+    margin: 0 12px 0 0;
+    font-size: 12px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.8px;
+}
+
+input, textarea{
+    width: 100%;
+    overflow: auto;
+    max-width: 100%;
+    margin: 0 16px 0 0;
+}
+
+.subscribe-button {
+    background-color: rgba(80, 111, 138, 0.8);
+    position: relative;
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: bottom;
+    width: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    padding: 0 16px;
+    font-family: Karla, sans-serif;
+    font-size: 14px;
+    border: none;
+}
+
+/* Footer */
+
+.shopify-footer {
+    background-color: #f3f0e7;
+    padding: 48px;
+    position: relative;
+}
+
+.footer-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: -16px;
+}
+
+.footer-block {
+    padding: 16px;
+    flex-basis: 30%;
+}
+
+.footer-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+
+.footer-body-paragraph {
+    max-width: 400px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.footer-socials {
+    display:inline-flex
+}
+
+.footer-menu > li{
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    font-family: 'Karla', 'sans-serif';
+    font-size: 16px;
+    height: 24px;
+}
+
+.footer-menu > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.info-block-parent {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-block-container-last {
+    display: grid;
+    justify-content: end;
+}
 /* Media Query for Small Screens */
 @media only screen and (max-width: 768px){
     .nav-bottom-row a {
