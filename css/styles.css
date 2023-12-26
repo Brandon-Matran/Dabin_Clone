@@ -443,6 +443,48 @@ input, textarea{
     display: grid;
     justify-content: end;
 }
+
+
+.footer-sub-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-sub-paragraph {
+    display: flex;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+.payment-icons-root ul {
+    list-style-type: none;
+    display: flex;
+}
+.payment-icons-item img {
+    height: 24px;
+    width: 38px;
+}
+
+.footer-logo-parent {
+    display: flex;
+    justify-content: center;
+}
+.footer-logo-parent img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.logo-child {
+    width: 215px;
+    margin: auto 15px;
+    flex: none
+}
+.logo-child.canada {
+    width: 350px;
+    margin: auto 15px;
+    flex: none
+}
+
 /* Media Query for Small Screens */
 @media only screen and (max-width: 768px){
     .nav-bottom-row a {
