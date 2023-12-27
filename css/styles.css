@@ -191,7 +191,7 @@ h2.font-section-heading {
 
 
 .slideshow-container {
-    width: 70%;
+    width: 60%;
     margin: auto;
     overflow: hidden;
 }
@@ -266,6 +266,7 @@ h2.font-section-heading {
     align-items: center;
     justify-content: center;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .featured-content-container p {
@@ -295,12 +296,13 @@ h2.font-section-heading {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
-    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .music-image-container {
     position: relative;
+    display: flex;
 }
 
 .music-content-text {
@@ -317,6 +319,7 @@ h2.font-section-heading {
     align-items: center;
     justify-content: center;
     max-width: 1200px;
+    margin: 0 auto;
 }
 .stage-image-container {
     display: flex;
@@ -351,7 +354,7 @@ h2.font-section-heading {
 }
 
 .subscribe-input {
-    
+
     border: 1px solid black;
     box-shadow: none;
     margin: 0 12px 0 0;
