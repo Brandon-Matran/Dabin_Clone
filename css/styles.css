@@ -521,5 +521,33 @@ input, textarea{
         justify-content: center;
         
     }
-    
+
+    .help-list-container {
+        right: 0;
+    }
+
+   .slideshow-slide img {
+    max-width: 100%;
+    vertical-align: middle;
+   }
+
+   .featured-content-container {
+    display: block;
+   }
+
+   .featured-content-text {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+   }
+
+   .featured-content-text p {
+    text-align: center;
+   }
+
+   .featured-content-text-heading {
+    display: flex;
+    justify-content: center;
+   }
+
 }

@@ -30,6 +30,17 @@ function toggleAriaExpanded(value, link) {
   }
 }
 
+
+/* SHOPIFY SECTION */
+document.addEventListener("DOMContentLoaded", function() {
+if (window.innerWidth <= 915) {
+  let parentContainer = document.getElementById('featured-content-container')
+  let featuredText = document.getElementById('show-content-text')
+  let musicContainer = document.getElementById('featured-content-image')
+
+  parentContainer.insertBefore(musicContainer, featuredText);
+}});
+
 function onContainerMouseEnter() {
   console.log("onContainerMouseEnter", isMouseInsideContainer);
   isMouseInsideContainer = true;
@@ -62,17 +73,32 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 
 nextBtn.addEventListener( 'click', ()=> {
+
+  if (window.innerWidth >= 915) {
   if (counter >= carouselImages.length) return;
   carouselSlide.style.transition = 'transform 0.4s ease-in-out';
   counter+=3;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
+  else {
+    if (counter >= carouselImages.length) return;
+    carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+    counter++;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
 })
 
 prevBtn.addEventListener( 'click', ()=> {
+  if (window.innerWidth < 915) {
   if (counter <= 0) return;
   carouselSlide.style.transition = 'transform 0.4s ease-in-out';
   counter-=3;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+} else {
+  carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+  counter--;
+  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+}
 })
 
 carouselSlide.addEventListener('transitionend', ()=> {
