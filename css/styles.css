@@ -563,4 +563,12 @@ input, textarea{
     padding: 0 14px;
    }
 
+   .footer-block {
+    text-align: center;
+   }
+
+   .shopify-footer{
+    padding: 0px;
+   }
+
 }
