@@ -570,5 +570,15 @@ input, textarea{
    .shopify-footer{
     padding: 0px;
    }
+   .footer-blocks {
+    flex-wrap: wrap;
+    display: grid;
+    justify-content: space-between;
+   }
+
+   .footer-block-end {
+    display: flex;
+    justify-content: center;
+   }
 
 }
