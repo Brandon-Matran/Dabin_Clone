@@ -155,6 +155,7 @@ h2.font-section-heading {
     text-align: center;
 }
 
+
 .font-button {
     background-color: white;
     position: relative;
@@ -504,7 +505,59 @@ input, textarea{
     margin: auto 15px;
     flex: none
 }
+/* SHOWS */
 
+.content {
+    min-height: 100vh;
+    padding: 72px 48px;
+}
+
+.row-full-width {
+    padding: 0 48px;
+}
+
+.columns {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.font-section-shows {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: .025em;
+    padding-bottom: 30px;
+}
+
+.event-summary {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #f3f0e7;
+    padding: 10px 10px;
+    border-radius: 3px;
+    color: #3b3b3b !important;
+    margin: 12px 0;
+
+}
+
+.event {
+    background-color: #f3f0e7;
+    border-radius: 3px;
+    padding: 20px 16px;
+}
+
+.event-color {
+    background-color: #bfbfbf;
+    display: block;
+    width: 10px;
+    height: 63px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-right: 20px;
+
+}
 /* Media Query for Small Screens */
 @media only screen and (max-width: 768px){
     .nav-bottom-row a {

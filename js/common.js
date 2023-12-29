@@ -1,156 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+class Header extends HTMLElement {
+    constructor() {
+        super();
+    }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dabin Fan Site</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/scripts.js"></script>
-  <script src="js/common.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Karla:wght@200;400&display=swap"
-    rel="stylesheet" />
-</head>
+    connectedCallback() {
+        this.innerHTML = `
+        <header class="top-header">
+        <div class="topnav">
+          <img class="topnav-logo" src="https://github.com/Brandon-Matran/Dabin_Clone/blob/master/resources/dabin-top-logo.jpg?raw=true" />
+        </div>
+        <div class="nav-bottom-row">
+          <ul>
+            <li class="level-1-link"><a class="home" href="./index.html">HOME</a></li>
+            <li class="level-1-link">
+              <a class="tickets" href="./shows.html">SHOWS</a>
+            </li>
 
-<body>
-  <div class="main-content">
-    <header class="top-header">
-      <div class="topnav">
-        <img class="topnav-logo" src="https://github.com/Brandon-Matran/Dabin_Clone/blob/master/resources/dabin-top-logo.jpg?raw=true" />
-      </div>
-      <div class="nav-bottom-row">
-        <ul>
-          <li class="level-1-link"><a class="home" href="./index.html">HOME</a></li>
-          <li class="level-1-link">
-            <a class="tickets" href="./shows.html">SHOWS</a>
-          </li>
-
-          <li class="level-1-link"><a>MUSIC</a></li>
-          <li class="level-1-link"><a>ABOUT</a></li>
-          <li class="level-1-link">
-            <a href="#" class="help-link" aria-expanded="false" onmouseover="toggleAriaExpanded(true, this)"
-              onmouseout="setTimeout(() => toggleAriaExpanded(false, this), 500)">
-              <span>HELP</span>
-            </a>
-            <div class="help-list-container" onmouseenter="onContainerMouseEnter()"
-              onmouseleave="onContainerMouseLeave()">
-              <ul class="help-list" style="display: block">
-                <li class="help-list-link">
-                  <a href="RETURNS">RETURNS PORTAL</a>
-                </li>
-                <li class="help-list-link">
-                  <a href="RETURNS">RETURNS PORTAL</a>
-                </li>
-                <li class="help-list-link">
-                  <a href="RETURNS">RETURNS PORTAL</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <section class="parent-image-container">
-      <div class="background-image-container">
-        <img class="background-image" src="https://dabinmusic.com/cdn/shop/files/dabin-sq-2_1000x.jpg?v=1613601313" />
-        <div class="caption text-left-box" style="top: 30px">
-          <div class="bg"></div>
-          <h2 class="font-section-heading">OFFICIAL DABIN MERCH</h2>
-          <div class="slideshow-button">
-            <a class="font-button" href="merch">SHOP NOW</a>
-          </div>
+            <li class="level-1-link"><a>MUSIC</a></li>
+            <li class="level-1-link"><a>ABOUT</a></li>
+            <li class="level-1-link">
+              <a href="#" class="help-link" aria-expanded="false" onmouseover="toggleAriaExpanded(true, this)"
+                onmouseout="setTimeout(() => toggleAriaExpanded(false, this), 500)">
+                <span>HELP</span>
+              </a>
+              <div class="help-list-container" onmouseenter="onContainerMouseEnter()"
+                onmouseleave="onContainerMouseLeave()">
+                <ul class="help-list" style="display: block">
+                  <li class="help-list-link">
+                    <a href="RETURNS">RETURNS PORTAL</a>
+                  </li>
+                  <li class="help-list-link">
+                    <a href="RETURNS">RETURNS PORTAL</a>
+                  </li>
+                  <li class="help-list-link">
+                    <a href="RETURNS">RETURNS PORTAL</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
-    <section class="slideshow-shop">
-      <div class="row header">
-        <div class="columns">
-          <h2 class="font-section-heading merch-header">
-            <a href="all-merch" class="merch-header">All Merch</a>
-          </h2>
-        </div>
-      </div>
-      <div class="slideshow-container">
-        <div class="slideshow-slide">
-          <img src="./public/products/img6.png" id="lastClone" />
-          <img src="./public/products/img1.png" id="image1" />
-          <img src="./public/products/img2.png" id="image2" />
-          <img src="./public/products/img3.png" id="image3" />
-          <img src="./public/products/img4.png" id="image4" />
-          <img src="./public/products/img5.png" id="image5" />
-          <img src="./public/products/img6.png" id="image6" />
-          <img src="./public/products/img1.png" id="firstClone" />
-        </div>
-        <a class="prev" id="prevBtn">&#8249;</a>
-        <a class="next" id="nextBtn">&#8250;</a>
-      </div>
-    </section>
-    <section class="shopify-section-container">
-      <div class="shopify-section">
-        <div class="container">
-          <div class="parent-featured">
-        <div class="featured-content-container">
-          <div class="featured-content-text">
-            <h2 class="featured-content-text-heading">SHOWS</h2>
-            <div>
-              <p>Grab your tickets for upcoming Festivals and Dabin Headline shows</p>
-            </div>
-
-          </div>
-          <div class="featured-content-image">
-            <img src="./public/dabin_concert.webp" style="width: 100%;"/>
-          </div>
-        </div>
-        </div>
-        <div class="music-parent-container">
-          <div class="music-image-container">
-          <img src="./public/dabin-guitar-orange.webp"style="width: 100%;"/>
-          </div>
-          <div class="featured-content-text">
-            <h2 class="featured-content-text-heading">MUSIC</h2>
-            <p>Listen to "Worlds Away" on all of your favorite streaming platforms now</p>
-        </div>
-      </div>
-
-      <div class="stage-parent-container">
-        <div class="stage-container">
-          <div class="featured-content-text">
-            <h2 class="featured-content-text-heading">MERCH</h2>
-            <p>Official DABIN Jerseys, Haoris, Hoodies, Tees, Custom Patches, Guitars Picks &amp; more</p>
-        </div>
-        <div class="stage-image-container">
-        <img src="./public/dabin-stage.webp" style="width: 100%;" />
-        </div>
-      </div>
-
-    </div>
-    </div>
-    <div class="email-section">
-      <div class="email-root">
-        <div class="email-container">
-          <div class="email-header featured-content-text-heading">JOIN THE SANCTUARY</div>
-          <div class="email-subheading featured-content-text" style="max-width: 100%; padding: 0;">
-            <p>Get updates from Dabin related to music, merch, and more.</p>
-            </div>
-            <div class="email-body">
-              <form>
-                <label for="email" class="hidden"></label>
-                <input class="newsletter-email" placeholder="Your Email" required>
-                <button class="subscribe-button">SUBSCRIBE</button>
-              </form>
-            </div>
-            <div id="hovIcon">
-              <img src="./public/Mask-Icon-100.webp" style="width: 70px; height: 70px; padding-top:30px;" />
-            </div>
-        </div>
+      </header>`
+    }
 
 
-      </div>
-    </div>
-      </section>
-      <div class="shopify-footer-container">
+}
+
+class Footer extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        this.innerHTML = ` <div class="shopify-footer-container">
         <footer class="shopify-footer">
           <div class="footer-blocks">
             <div class="footer-block">
@@ -306,9 +208,9 @@
             </div>
           </div>
         </footer>
-         </div>
+         </div>`
+    }
 
-
-</body>
-
-</html>
+}
+customElements.define("header-component", Header)
+customElements.define("footer-component", Footer)
