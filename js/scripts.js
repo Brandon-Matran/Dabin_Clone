@@ -92,6 +92,7 @@ nextBtn.addEventListener( 'click', ()=> {
   if (counter >= carouselImages.length) return;
   carouselSlide.style.transition = 'transform 0.4s ease-in-out';
   counter+=3;
+  counter = Math.min(counter, carouselImages.length - 1);
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
   }
   else {
@@ -103,8 +104,9 @@ nextBtn.addEventListener( 'click', ()=> {
 })
 
 prevBtn.addEventListener( 'click', ()=> {
-  if (window.innerWidth < 915) {
+  
   if (counter <= 0) return;
+  if (window.innerWidth >= 915) {
   carouselSlide.style.transition = 'transform 0.4s ease-in-out';
   counter-=3;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -113,22 +115,19 @@ prevBtn.addEventListener( 'click', ()=> {
   counter--;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
+
 })
 
-carouselSlide.addEventListener('transitionend', ()=> {
-  if (carouselImages[counter].id ==='lastClone') {
-    console.log(carouselImages[counter].id)
-    carouselSlide.style.transition = 'none';
-    counter = carouselImages.length
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+carouselSlide.addEventListener('transitionend', () => {
+  if (carouselImages[counter].id === 'lastClone') {
+      carouselSlide.style.transition = 'none';
+      counter = carouselImages.length - 2; 
+      carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  } else if (carouselImages[counter].id === 'firstClone') {
+      carouselSlide.style.transition = 'none';
+      counter = carouselImages.length - counter;
+      carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
   }
-})
+});
 
-carouselSlide.addEventListener('transitionend', ()=> {
-  if (carouselImages[counter].id ==='firstClone') {
-    carouselSlide.style.transition = 'none';
-    counter = carouselImages.length - counter;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-  }
-})
 })
