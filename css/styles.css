@@ -47,7 +47,7 @@ body, html {
   }
 .nav-bottom-row a {
     margin-right: 25px;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     color: black;
     margin-left: 15px;
@@ -664,6 +664,25 @@ input, textarea{
     font-weight: bold;
     padding-left: 5px;
 
+}
+
+/* MUSIC TAB */
+.music-section {
+    justify-content: center;
+    display: flex;
+}
+
+.font-paragraph {
+    display: flex;
+    justify-content: center;
+}
+
+.media-player {
+    width: 25%;
+}
+
+.TrackListWidget_trackListContainer__zpYQe {
+    overflow:auto
 }
 /* Media Query for Small Screens */
 @media only screen and (max-width: 915px) {

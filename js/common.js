@@ -16,7 +16,7 @@ class Header extends HTMLElement {
               <a class="tickets" href="./shows.html">TOUR</a>
             </li>
 
-            <li class="level-1-link"><a>MUSIC</a></li>
+            <li class="level-1-link"><a href="./music.html">MUSIC</a></li>
             <li class="level-1-link"><a>ABOUT</a></li>
             <li class="level-1-link">
               <a href="#" class="help-link" aria-expanded="false" onmouseover="toggleAriaExpanded(true, this)"
