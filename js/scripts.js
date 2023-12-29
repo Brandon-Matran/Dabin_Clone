@@ -45,6 +45,12 @@ if (window.innerWidth <= 915) {
   let stageContainer = document.getElementById('stage-image-container')
 
   parentContainer2.insertBefore(stageContainer, merchText);
+
+  let parentContainer3 = document.getElementById('footer-sub-container')
+  let footerSubText = document.getElementById('footer-sub-paragraph')
+  let paymentIcons = document.getElementById('payment-icons')
+
+  parentContainer3.insertBefore(paymentIcons, footerSubText);
 }});
 
 

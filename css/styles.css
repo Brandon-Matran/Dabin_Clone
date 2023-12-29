@@ -581,4 +581,24 @@ input, textarea{
     justify-content: center;
    }
 
+   .footer-sub-container {
+    display: block;
+   }
+
+   .footer-sub-paragraph {
+    justify-content: center;
+   }
+
+   .payment-icons-list {
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+   .logo-child  {
+    width: 25%;
+   }
+
+   .logo-child.canada {
+    width: 25%;
+   }
 }
