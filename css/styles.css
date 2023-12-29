@@ -684,6 +684,23 @@ input, textarea{
 .TrackListWidget_trackListContainer__zpYQe {
     overflow:auto
 }
+
+/* ABOUT */
+.about-parent {
+    background-color: #f7f7f7
+}
+.about-container {
+    justify-content: center;
+    align-items: start;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.columns-about{
+    background-color: #f7f7f7;
+}
 /* Media Query for Small Screens */
 @media only screen and (max-width: 915px) {
 
