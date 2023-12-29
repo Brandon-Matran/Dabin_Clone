@@ -550,4 +550,17 @@ input, textarea{
     justify-content: center;
    }
 
+   .music-parent-container {
+    display: block;
+    padding: 0 48px;
+   }
+
+   .stage-container {
+    display: block;
+   }
+
+   .email-subheading {
+    padding: 0 14px;
+   }
+
 }

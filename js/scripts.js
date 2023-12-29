@@ -39,7 +39,15 @@ if (window.innerWidth <= 915) {
   let musicContainer = document.getElementById('featured-content-image')
 
   parentContainer.insertBefore(musicContainer, featuredText);
+
+  let parentContainer2 = document.getElementById('stage-container')
+  let merchText = document.getElementById('merch-content-text')
+  let stageContainer = document.getElementById('stage-image-container')
+
+  parentContainer2.insertBefore(stageContainer, merchText);
 }});
+
+
 
 function onContainerMouseEnter() {
   console.log("onContainerMouseEnter", isMouseInsideContainer);
