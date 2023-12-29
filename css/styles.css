@@ -732,6 +732,10 @@ input, textarea{
         right: 10px;
     }
 
+    .slideshow-container {
+        width: 100%;
+    }
+
    .slideshow-slide img {
     max-width: 100%;
     vertical-align: middle;
