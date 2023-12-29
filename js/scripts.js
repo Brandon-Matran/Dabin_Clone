@@ -1,3 +1,17 @@
+/*LOGOS AND PICTURES */
+
+
+
+window.addEventListener('resize', function () {
+  const topNav = document.querySelector(".topnav-logo")
+  if (this.window.innerWidth <= 915) {
+    topNav.style.width = "125%";
+  }
+
+})
+
+
+/* SLIDESHOW */
 let isMouseInsideContainer = false;
 
 function toggleAriaExpanded(value, link) {
@@ -15,6 +29,31 @@ function toggleAriaExpanded(value, link) {
     }
   }
 }
+
+
+/* SHOPIFY SECTION */
+document.addEventListener("DOMContentLoaded", function() {
+if (window.innerWidth <= 915) {
+  let parentContainer = document.getElementById('featured-content-container')
+  let featuredText = document.getElementById('show-content-text')
+  let musicContainer = document.getElementById('featured-content-image')
+
+  parentContainer.insertBefore(musicContainer, featuredText);
+
+  let parentContainer2 = document.getElementById('stage-container')
+  let merchText = document.getElementById('merch-content-text')
+  let stageContainer = document.getElementById('stage-image-container')
+
+  parentContainer2.insertBefore(stageContainer, merchText);
+
+  let parentContainer3 = document.getElementById('footer-sub-container')
+  let footerSubText = document.getElementById('footer-sub-paragraph')
+  let paymentIcons = document.getElementById('payment-icons')
+
+  parentContainer3.insertBefore(paymentIcons, footerSubText);
+}});
+
+
 
 function onContainerMouseEnter() {
   console.log("onContainerMouseEnter", isMouseInsideContainer);
@@ -48,33 +87,47 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 
 nextBtn.addEventListener( 'click', ()=> {
+
+  if (window.innerWidth >= 915) {
   if (counter >= carouselImages.length) return;
   carouselSlide.style.transition = 'transform 0.4s ease-in-out';
   counter+=3;
+  counter = Math.min(counter, carouselImages.length - 1);
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
+  else {
+    if (counter >= carouselImages.length) return;
+    carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+    counter++;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
 })
 
 prevBtn.addEventListener( 'click', ()=> {
+  
   if (counter <= 0) return;
+  if (window.innerWidth >= 915) {
   carouselSlide.style.transition = 'transform 0.4s ease-in-out';
   counter-=3;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+} else {
+  carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+  counter--;
+  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+}
+
 })
 
-carouselSlide.addEventListener('transitionend', ()=> {
-  if (carouselImages[counter].id ==='lastClone') {
-    console.log(carouselImages[counter].id)
-    carouselSlide.style.transition = 'none';
-    counter = carouselImages.length
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+carouselSlide.addEventListener('transitionend', () => {
+  if (carouselImages[counter].id === 'lastClone') {
+      carouselSlide.style.transition = 'none';
+      counter = carouselImages.length - 2; 
+      carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  } else if (carouselImages[counter].id === 'firstClone') {
+      carouselSlide.style.transition = 'none';
+      counter = carouselImages.length - counter;
+      carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
   }
-})
+});
 
-carouselSlide.addEventListener('transitionend', ()=> {
-  if (carouselImages[counter].id ==='firstClone') {
-    carouselSlide.style.transition = 'none';
-    counter = carouselImages.length - counter;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-  }
-})
 })
