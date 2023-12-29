@@ -1,3 +1,17 @@
+/*LOGOS AND PICTURES */
+
+
+
+window.addEventListener('resize', function () {
+  const topNav = document.querySelector(".topnav-logo")
+  if (this.window.innerWidth <= 915) {
+    topNav.style.width = "125%";
+  }
+
+})
+
+
+/* SLIDESHOW */
 let isMouseInsideContainer = false;
 
 function toggleAriaExpanded(value, link) {
