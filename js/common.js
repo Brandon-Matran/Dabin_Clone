@@ -13,7 +13,7 @@ class Header extends HTMLElement {
           <ul>
             <li class="level-1-link"><a class="home" href="./index.html">HOME</a></li>
             <li class="level-1-link">
-              <a class="tickets" href="./shows.html">SHOWS</a>
+              <a class="tickets" href="./shows.html">TOUR</a>
             </li>
 
             <li class="level-1-link"><a>MUSIC</a></li>

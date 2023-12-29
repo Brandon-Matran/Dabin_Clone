@@ -535,19 +535,31 @@ input, textarea{
     font-weight: bold;
     display: inline-block;
     background-color: #f3f0e7;
-    padding: 10px 10px;
+    padding: 15px 10px;
     border-radius: 3px;
     color: #3b3b3b !important;
     margin: 12px 0;
 
 }
 
+#location-arrow {
+    height: 12px;
+    width: 12px;
+    padding-right: 5px;
+    align-items: center;
+}
 .event {
     background-color: #f3f0e7;
     border-radius: 3px;
-    padding: 20px 16px;
+    padding: 28px 16px;
+    display: flex;
+    margin-bottom: 16px;
 }
 
+.event-details-container {
+    width: 100%;
+    padding-left: 25px;
+}
 .event-color {
     background-color: #bfbfbf;
     display: block;
@@ -556,6 +568,101 @@ input, textarea{
     border-radius: 3px;
     flex-shrink: 0;
     margin-right: 20px;
+}
+.event-date-container {
+    width: 100px !important;
+    display: flex;
+}
+.event-day {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.event-month {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.event-seperator {
+    opacity: 0.5;
+    padding-left: 4px;
+    padding-top: 10px;
+}
+
+.calendar-event-date-to {
+    padding-left: 2px;
+    opacity: 0.5;
+}
+.calendar-event-date-to .event-day{
+    font-size: 14px;
+    color: gray
+}
+
+.calendar-event-date-to .event-month {
+    font-size: 10px;
+    color:gray
+}
+
+.event-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.event-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #5e5e5e !important;
+    padding-top: 2px;
+}
+
+
+
+.event-properties {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #5e5e5e !important;
+    padding-top: 4px;
+}
+
+.event-tickets-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+
+}
+
+.event-tickets {
+    display: flex;
+    justify-content: end;
+
+}
+.ticket-button {
+    display: flex;
+    opacity: 1;
+    cursor: pointer;
+    padding: 10px 16px;
+    text-decoration: none !important;
+    align-items: center;
+    top:0;
+
+    background-color: #506f8a !important;
+    border-radius: 3px;
+    border: none;
+    box-shadow: rgba(23,43,99,.24) 0 7px 28px !important
+}
+
+.ticket-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+    color: white;
+    font-weight: bold;
+    padding-left: 5px;
 
 }
 /* Media Query for Small Screens */
@@ -572,7 +679,7 @@ input, textarea{
 
     .nav-bottom-row {
         justify-content: center;
-        
+
     }
 
     .nav-bottom-row a {
