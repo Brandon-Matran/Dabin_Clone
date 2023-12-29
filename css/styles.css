@@ -193,10 +193,11 @@ h2.font-section-heading {
 
 
 .slideshow-container {
-    width: 100%;
+    width: 85%;
     margin: auto;
     overflow: hidden;
     padding: 0 30px;
+    padding-left: 5px;
 
 }
 .slideshow-slide {
@@ -692,6 +693,11 @@ input, textarea{
 .about-container {
     justify-content: center;
     align-items: start;
+}
+
+.about-text {
+    padding: 16px 48px;
+    line-height: normal;
 }
 
 .about-image {
