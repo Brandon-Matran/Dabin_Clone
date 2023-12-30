@@ -28,6 +28,10 @@ body, html {
     padding: 32px 48px 0;
 }
 
+.hidden-menu {
+    z-index: 9999;
+}
+
 /* Bottom Row */
 
 .nav-bottom-row {
@@ -88,7 +92,83 @@ body, html {
     position: relative;
 }
 
+#hidden-menu {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
 
+.hidden-menu-container {
+    padding-top: 20px;
+    width: 80%;
+    background-color: white;
+}
+
+.hidden-link-parent > li {
+    list-style-type: none;
+}
+
+.hidden-header {
+    border-bottom: 1px solid black;
+
+}
+
+.hidden-header > h1 {
+    font-family: Karla, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.hidden-header > p {
+margin: 0;
+}
+
+.hidden-link-parent {
+    padding: 0;
+    margin: 0;
+    display: grid;
+}
+
+.hidden-link-parent a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px 35px 20px 15px;
+}
+.hidden-link {
+    font-family: Karla, sans-serif;
+    /* border-bottom: 1px solid black; */
+    width:100%;
+    display: inline-block;
+
+}
+.hidden-link:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+.hidden-menu-parent {
+    display: flex;
+    padding: 0;
+}
+
+.hidden-menu-svg {
+    color: white;
+}
+
+.hidden-menu-close {
+    padding-right: 20px;
+    position: fixed;
+    right:0;
+    top:12px;
+}
 /* Main Section */
 
 
