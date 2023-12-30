@@ -58,7 +58,7 @@ class Footer extends HTMLElement {
             <div class="footer-block">
               <div class="footer-heading">ABOUT</div>
               <div class="footer-body">
-                <div class="footer-body-paragraph" style="width:400px;">
+                <div class="footer-body-paragraph">
                   <p>Dabin is a JUNO nominated music producer &amp; instrumentalist originally from Toronto. Having spent his teens learning to play the piano, drums and guitar, Dabin started producing electronic music in 2011.</p>
                 </div>
                 <div class="footer-socials">

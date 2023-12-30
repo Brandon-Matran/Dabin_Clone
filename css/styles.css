@@ -873,4 +873,32 @@ input, textarea{
    .media-player {
     width: 100%;
    }
+
+   .about-image {
+    width: 100%;
+   }
+
+   .about-text {
+    text-align: center;
+    padding: 0;
+    line-height: 1.5em;
+   }
+
+    .parent-featured {
+        padding: 32px 16px;
+   }
+
+   .rte-content > p {
+    margin: 0;
+    font-size: 15px
+   }
+
+   .rte-content >*:not(:last-child) {
+    padding-bottom: 8px;
+
+   }
+
+   .footer-body-paragraph {
+    padding: 0 5px;
+   }
 }
