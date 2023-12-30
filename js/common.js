@@ -8,71 +8,72 @@ class Header extends HTMLElement {
 
         <header class="top-header">
 
-      <div class="topnav">
-        <div>
+        <div class="topnav">
+          <div>
 
-          <svg class="icon--root icon--menu" id="icon-menu" viewBox="0 0 22 16">
-          <path d="M0 2.4V.6h22v1.8H0zm0 6.584v-1.8h22v1.8H0zm0 6.584v-1.8h22v1.8H0z" fill-rule="nonzero"></path>
-        </svg></div>
-        <div class="topnav-img"> <img class="topnav-logo" src="https://github.com/Brandon-Matran/Dabin_Clone/blob/master/resources/dabin-top-logo.jpg?raw=true" /></div>
-        <div><svg class="icon--root icon--cart" viewBox="0 0 21 20">
-          <path d="M16.731 19.393a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zm-9.74 0a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zM2.534 1.9H1A.9.9 0 011 .1h2.277a.9.9 0 01.883.73l.469 2.422h15.14a.9.9 0 01.876 1.105l-2.203 9.445a.9.9 0 01-.876.695H5.712a.9.9 0 01-.884-.729L2.534 1.9zm16.1 3.152H4.977l1.477 7.645h10.397l1.783-7.645z" fill-rule="evenodd"></path>
-        </svg></div>
-      </div>
-      <div class="hidden-menu overlay" id="hidden-menu" style="display:none;">
-        <div class="hidden-menu-parent">
-
-        <div class="hidden-menu-container">
-        <div class="hidden-header">
-        <p>Welcome to Sanctuary</p>
-      </div>
-          <ul class="hidden-link-parent">
-            <li class="hidden-link"><a class="home" href="./index.html">HOME</a></li>
-            <li class="hidden-link"><a href="./music.html">MUSIC</a></li>
-            <li class="hidden-link"><a href="./music.html">MUSIC</a></li>
-            <li class="hidden-link"><a href="./about.html">ABOUT</a></li>
-          </ul>
-          </div>
-          <div class="hidden-menu-close">
-            <div class="hidden-menu-svg">   <svg style="color:#fff;" class="icon--root icon--cross" id="hidden-menu-close" viewBox="0 0 20 20">
-              <path d="M10 8.727L17.944.783l1.273 1.273L11.273 10l7.944 7.944-1.273 1.273L10 11.273l-7.944 7.944-1.273-1.273L8.727 10 .783 2.056 2.056.783 10 8.727z" fill-rule="nonzero"></path>
-            </svg></div>
+            <svg class="icon--root icon--menu" id="icon-menu" viewBox="0 0 22 16">
+            <path d="M0 2.4V.6h22v1.8H0zm0 6.584v-1.8h22v1.8H0zm0 6.584v-1.8h22v1.8H0z" fill-rule="nonzero"></path>
+          </svg></div>
+          <div class="topnav-img"> <img class="topnav-logo" src="https://github.com/Brandon-Matran/Dabin_Clone/blob/master/resources/dabin-top-logo.jpg?raw=true" /></div>
+          <div><svg class="icon--root icon--cart" viewBox="0 0 21 20">
+            <path d="M16.731 19.393a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zm-9.74 0a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zM2.534 1.9H1A.9.9 0 011 .1h2.277a.9.9 0 01.883.73l.469 2.422h15.14a.9.9 0 01.876 1.105l-2.203 9.445a.9.9 0 01-.876.695H5.712a.9.9 0 01-.884-.729L2.534 1.9zm16.1 3.152H4.977l1.477 7.645h10.397l1.783-7.645z" fill-rule="evenodd"></path>
+          </svg></div>
         </div>
+        <div class="hidden-menu overlay" id="hidden-menu">
+          <div class="hidden-menu-parent">
 
-      </div>
-    </div>
-      <div class="nav-bottom-row">
-        <ul>
-          <li class="level-1-link"><a class="home" href="./index.html">HOME</a></li>
-          <li class="level-1-link">
-            <a class="tickets" href="./shows.html">TOUR</a>
-          </li>
 
-          <li class="level-1-link"><a href="./music.html">MUSIC</a></li>
-          <li class="level-1-link"><a href="./about.html">ABOUT</a></li>
-          <li class="level-1-link">
-            <a href="#" class="help-link" aria-expanded="false" onmouseover="toggleAriaExpanded(true, this)"
-              onmouseout="setTimeout(() => toggleAriaExpanded(false, this), 500)">
-              <span>HELP</span>
-            </a>
-            <div class="help-list-container" onmouseenter="onContainerMouseEnter()"
-              onmouseleave="onContainerMouseLeave()">
-              <ul class="help-list" style="display: block">
-                <li class="help-list-link">
-                  <a href="RETURNS">RETURNS PORTAL</a>
-                </li>
-                <li class="help-list-link">
-                  <a href="RETURNS">RETURNS PORTAL</a>
-                </li>
-                <li class="help-list-link">
-                  <a href="RETURNS">RETURNS PORTAL</a>
-                </li>
-              </ul>
+          <div class="hidden-menu-container">
+            <div class="hidden-header">
+              <p>Welcome to Sanctuary</p>
             </div>
-          </li>
-        </ul>
+            <ul class="hidden-link-parent">
+              <li class="hidden-link"><a class="home" href="./index.html">HOME</a></li>
+              <li class="hidden-link"><a href="./shows.html">TOUR</a></li>
+              <li class="hidden-link"><a href="./music.html">MUSIC</a></li>
+              <li class="hidden-link"><a href="./about.html">ABOUT</a></li>
+            </ul>
+            </div>
+            <div class="hidden-menu-close">
+              <div class="hidden-menu-svg">   <svg style="color:#fff;" class="icon--root icon--cross" id="hidden-menu-close" viewBox="0 0 20 20">
+                <path fill="white" d="M10 8.727L17.944.783l1.273 1.273L11.273 10l7.944 7.944-1.273 1.273L10 11.273l-7.944 7.944-1.273-1.273L8.727 10 .783 2.056 2.056.783 10 8.727z" fill-rule="nonzero"></path>
+              </svg></div>
+          </div>
+
+        </div>
       </div>
-    </header>`
+        <div class="nav-bottom-row">
+          <ul>
+            <li class="level-1-link"><a class="home" href="./index.html">HOME</a></li>
+            <li class="level-1-link">
+              <a class="tickets" href="./shows.html">TOUR</a>
+            </li>
+
+            <li class="level-1-link"><a href="./music.html">MUSIC</a></li>
+            <li class="level-1-link"><a href="./about.html">ABOUT</a></li>
+            <li class="level-1-link">
+              <a href="#" class="help-link" aria-expanded="false" onmouseover="toggleAriaExpanded(true, this)"
+                onmouseout="setTimeout(() => toggleAriaExpanded(false, this), 500)">
+                <span>HELP</span>
+              </a>
+              <div class="help-list-container" onmouseenter="onContainerMouseEnter()"
+                onmouseleave="onContainerMouseLeave()">
+                <ul class="help-list" style="display: block">
+                  <li class="help-list-link">
+                    <a href="RETURNS">RETURNS PORTAL</a>
+                  </li>
+                  <li class="help-list-link">
+                    <a href="RETURNS">RETURNS PORTAL</a>
+                  </li>
+                  <li class="help-list-link">
+                    <a href="RETURNS">RETURNS PORTAL</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>`
     }
 
 
