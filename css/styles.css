@@ -463,7 +463,6 @@ input, textarea{
 
 .footer-block-container-last {
     display: grid;
-    justify-content: end;
 }
 
 
@@ -810,5 +809,64 @@ input, textarea{
 
    .logo-child.canada {
     width: 25%;
+   }
+
+   /* TOUR */
+
+   .event {
+    padding: 0;
+    flex-wrap: wrap;
+   }
+
+   .font-section-shows {
+    display: flex;
+    justify-content: start;
+   }
+   .tour-events {
+    justify-content: center;
+    display:flex;
+   }
+
+   .content {
+    padding: 32px 16px;
+   }
+
+   .columns {
+    padding-left: 16px;
+    padding-right: 16px;
+   }
+
+   .row-full-width {
+    padding: 0;
+   }
+
+
+
+   .event-tickets-container {
+    justify-content: center;
+
+   }
+
+   .event-date-container {
+    width: 50px !important;
+
+   }
+
+   .event-color {
+    width: 5px;
+    left: 1px !important;
+   }
+
+   .event-details-container {
+    width: 50%;
+   }
+   .event-name {
+    font-size: 16px;
+    width: max-content;
+
+   }
+
+   .event-description {
+    font-size: 14px;
    }
 }
