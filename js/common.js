@@ -23,9 +23,9 @@ class Header extends HTMLElement {
         <div class="hidden-menu-parent">
 
         <div class="hidden-menu-container">
-          <div class="hidden-header">
-            <h1>Welcome to Sanctuary</h1>
-          </div>
+        <div class="hidden-header">
+        <p>Welcome to Sanctuary</p>
+      </div>
           <ul class="hidden-link-parent">
             <li class="hidden-link"><a class="home" href="./index.html">HOME</a></li>
             <li class="hidden-link"><a href="./music.html">MUSIC</a></li>

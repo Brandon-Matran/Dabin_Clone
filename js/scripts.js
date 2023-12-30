@@ -149,7 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   iconMenu.addEventListener('click', () => {
     console.log("FIRED")
-    hiddenMenu.style.display = (hiddenMenu.style.display ==='block') ? 'none' : 'block';
+    hiddenMenu.classList.toggle('active')
+    //hiddenMenu.style.display = (hiddenMenu.style.display ==='block') ? 'none' : 'block';
 
 })});
 
@@ -162,6 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log(menuClose)
   menuClose.addEventListener('click', () => {
-    hiddenMenu.style.display = 'none';
+  //  hiddenMenu.style.display = 'none';
+    hiddenMenu.classList.remove('active')
+
   })
 });

@@ -94,7 +94,7 @@ body, html {
 
 #hidden-menu {
     position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
     top: 0;
@@ -104,12 +104,20 @@ body, html {
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
+    transition: left 0.3s ease;
+    transform: translateX(-100%);
   }
 
+  #hidden-menu.active {
+    width: 100%;
+    transform: translateX(0) rotate(0deg);
+    transition: all 0.5s ease;
+}
 .hidden-menu-container {
     padding-top: 20px;
     width: 80%;
     background-color: white;
+    min-height: 100vh;
 }
 
 .hidden-link-parent > li {
@@ -123,7 +131,7 @@ body, html {
 
 .hidden-header > h1 {
     font-family: Karla, sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -803,6 +811,7 @@ input, textarea{
 
     .nav-bottom-row {
         justify-content: center;
+        display: none;
 
     }
 
@@ -999,5 +1008,12 @@ input, textarea{
     display: flex;;
     justify-content: center;
     align-items: center;
+   }
+
+   .hidden-header {
+    font-family: Karla, 'sans-serif';
+    padding-left: 15px;
+    font-size: 14px;
+    padding-bottom: 20px;
    }
 }
