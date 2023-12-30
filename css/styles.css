@@ -869,4 +869,8 @@ input, textarea{
    .event-description {
     font-size: 14px;
    }
+
+   .media-player {
+    width: 100%;
+   }
 }
