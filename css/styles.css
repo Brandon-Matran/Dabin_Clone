@@ -577,6 +577,7 @@ input, textarea{
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     font-weight: bold;
+    color:#3b3b3b;
 }
 
 .event-month {
@@ -605,6 +606,7 @@ input, textarea{
 }
 
 .event-name {
+    color: #3b3b3b;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -814,8 +816,8 @@ input, textarea{
    /* TOUR */
 
    .event {
-    padding: 0;
     flex-wrap: wrap;
+    padding: 10px 0;
    }
 
    .font-section-shows {
@@ -840,10 +842,15 @@ input, textarea{
     padding: 0;
    }
 
+   .ticket-button {
+    padding: 5px 16px;
+   }
+
 
 
    .event-tickets-container {
     justify-content: center;
+    padding-top: 5px;
 
    }
 
@@ -855,6 +862,7 @@ input, textarea{
    .event-color {
     width: 5px;
     left: 1px !important;
+    margin-right: 10px;
    }
 
    .event-details-container {
