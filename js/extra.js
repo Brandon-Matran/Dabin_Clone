@@ -13,8 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     iconMenu.addEventListener('click', () => {
-      console.log("FIRED")
+
       hiddenMenu.classList.toggle('active')
+      console.log("FIRED")
       //hiddenMenu.style.display = (hiddenMenu.style.display ==='block') ? 'none' : 'block';
 
   })});
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuClose.addEventListener('click', () => {
     //  hiddenMenu.style.display = 'none';
       hiddenMenu.classList.remove('active')
+      console.log("FIRED")
 
     })
   });
