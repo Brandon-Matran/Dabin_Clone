@@ -234,10 +234,10 @@ class Footer extends HTMLElement {
           </div>
           <div class="footer-logo-parent">
             <div class="logo-child">
-              <img src="./public/factor-logo.webp"/>
+              <img src="./public/images/factor-logo.webp"/>
             </div>
             <div class="logo-child canada">
-              <img src="./public/canada-logo.webp"/>
+              <img src="./public/images/canada-logo.webp"/>
             </div>
           </div>
         </footer>
