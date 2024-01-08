@@ -104,7 +104,6 @@ nextBtn.addEventListener( 'click', ()=> {
 })
 
 prevBtn.addEventListener( 'click', ()=> {
-
   if (counter <= 0) return;
   if (window.innerWidth >= 915) {
   carouselSlide.style.transition = 'transform 0.4s ease-in-out';
@@ -119,52 +118,17 @@ prevBtn.addEventListener( 'click', ()=> {
 })
 
 carouselSlide.addEventListener('transitionend', () => {
-  if (carouselImages[counter].id === 'lastClone') {
+    console.log(counter)
+    if (counter <= 0) {
+      console.log(counter, "counter");
       carouselSlide.style.transition = 'none';
-      counter = carouselImages.length - 2;
+      counter = carouselImages.length-4;
+      console.log(counter)
       carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-  } else if (carouselImages[counter].id === 'firstClone') {
+    } else if (carouselImages[counter].id === 'firstClone') {
       carouselSlide.style.transition = 'none';
       counter = carouselImages.length - counter;
       carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
   }
 });
-
 })
-
-
-// /* Burger icon */
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-
-//   var iconMenu = document.getElementById('icon-menu')
-
-//   console.log(iconMenu)
-//   var hiddenMenu = document.getElementById('hidden-menu')
-
-//   console.log(hiddenMenu)
-
-
-
-//   iconMenu.addEventListener('click', () => {
-//     console.log("FIRED")
-//     hiddenMenu.classList.toggle('active')
-//     //hiddenMenu.style.display = (hiddenMenu.style.display ==='block') ? 'none' : 'block';
-
-// })});
-
-
-// /* Close hidden menu */
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   var menuClose = document.getElementById('hidden-menu-close');
-//   var hiddenMenu = document.getElementById('hidden-menu')
-
-//   console.log(menuClose)
-//   menuClose.addEventListener('click', () => {
-//   //  hiddenMenu.style.display = 'none';
-//     hiddenMenu.classList.remove('active')
-
-//   })
-// });
