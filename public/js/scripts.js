@@ -119,13 +119,20 @@ prevBtn.addEventListener( 'click', ()=> {
 
 carouselSlide.addEventListener('transitionend', () => {
     console.log(counter)
+    if (window.innerWidth >= 915){
     if (counter <= 0) {
       console.log(counter, "counter");
       carouselSlide.style.transition = 'none';
       counter = carouselImages.length-4;
       console.log(counter)
       carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    } else if (carouselImages[counter].id === 'firstClone') {
+    }
+    } else if (carouselImages[counter].id == 'lastClone') {
+      carouselSlide.style.transition = 'none';
+      counter = carouselImages.length - 2;
+      carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+    else if (carouselImages[counter].id === 'firstClone') {
       carouselSlide.style.transition = 'none';
       counter = carouselImages.length - counter;
       carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
