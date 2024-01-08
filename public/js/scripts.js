@@ -118,10 +118,8 @@ prevBtn.addEventListener( 'click', ()=> {
 })
 
 carouselSlide.addEventListener('transitionend', () => {
-    console.log(counter)
     if (window.innerWidth >= 915){
     if (counter <= 0) {
-      console.log(counter, "counter");
       carouselSlide.style.transition = 'none';
       counter = carouselImages.length-4;
       console.log(counter)
